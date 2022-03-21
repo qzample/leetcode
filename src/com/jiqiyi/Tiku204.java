@@ -8,19 +8,17 @@ public class Tiku204 {
 	}
 	
 	public static int countPrimes(int n) {
-        int cnt = 0;
-        if(n==2) return 1; 
+		// sieve of Eratosthenes
+		int cnt = 0;
+		boolean[] arr = new boolean[n];
 		for(int i=2;i<n;i++) {
-        	if(isPrime(i)) cnt++;
-        }
+			if(arr[i]) continue;
+			cnt++;
+			for(int j=i;j<n;j+=i) {
+				arr[j] = true;
+			}
+		}
 		return cnt;
-    }
-	
-	public static boolean isPrime(int num){
-        for(int i=2;i<=Math.sqrt(num);i++) {
-        	if(num%i==0) return false;
-        }
-        return true;
-    }
+    }	
 
 }

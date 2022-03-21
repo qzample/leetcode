@@ -23,37 +23,22 @@ public class Tiku189 {
     }
 	
 	public static void rotate(int[] nums, int k) {	
-		int len = nums.length;
-		k = k%len;
-		int head = 0,tail = len-1;		
-		// reverse the entire array
-		while(head<tail) {
-			nums[head] = nums[head] + nums[tail];
-			nums[tail] = nums[head] - nums[tail];
-			nums[head] = nums[head] - nums[tail];
-			head++;
-			tail--;
+		if(k==0) return;
+		k = k%nums.length;
+		reverse(0, nums.length-1, nums);
+		reverse(0, k-1, nums);
+		reverse(k, nums.length-1, nums);
+	}
+	
+	public static void reverse(int start,int end,int[] nums) {
+		int temp;
+		while (start < end) {
+			temp = nums[start];
+			nums[start] = nums[end];
+			nums[end] = temp;
 		}
-		// reverse the front k's item
-		head = 0;
-		tail = k-1;
-		while(head < tail) {
-			nums[head] = nums[head] + nums[tail];
-			nums[tail] = nums[head] - nums[tail];
-			nums[head] = nums[head] - nums[tail];
-			head++;
-			tail--;
-		}
-		//reverse the back item
-		head = k;
-		tail = nums.length-1;
-		while(head < tail) {
-			nums[head] = nums[head] + nums[tail];
-			nums[tail] = nums[head] - nums[tail];
-			nums[head] = nums[head] - nums[tail];
-			head++;
-			tail--;
-		}
+		start++;
+		end--;
 	}
 
 }

@@ -7,7 +7,7 @@ public class Tiku19 {
 
 	}
 	
-	public ListNode removeNthFromEnd(ListNode head, int n) {
+	public ListNode removeNthFromEnd1(ListNode head, int n) {
 		ListNode fast = head;
 		ListNode slow = head;
 		if(n==1) {
@@ -33,6 +33,42 @@ public class Tiku19 {
 		}
 		return head;
     }
+	
+	
+	
+	
+	public ListNode removeNthFromEnd(ListNode head, int n) {
+		ListNode fast = head,slow = head;
+        while(n>0){
+            fast = fast.next;
+            n--;
+        }
+        while(fast!=null && fast.next!=null){
+            fast = fast.next;
+            slow = slow.next;
+        }
+        if(fast==null) {
+        	return head.next;
+        }
+        else {
+        	// prepare to remove slow.next
+            slow.next = slow.next.next;
+        }
+        return head;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
 	class ListNode {
 		int val;

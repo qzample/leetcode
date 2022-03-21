@@ -7,6 +7,7 @@ public class Tiku278 {
 
 	}
 
+	
 	/*
 	public int firstBadVersion(int n) {
 		int start = 1,end = n,mid = 0;
@@ -20,6 +21,5 @@ public class Tiku278 {
             }
         }
         return start;
-    }
-    */
+    }*/
 }
