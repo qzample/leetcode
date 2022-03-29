@@ -6,7 +6,16 @@ public class Tiku206 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		ListNode node1 = new ListNode(1);
+		ListNode node2 = new ListNode(2);
+		ListNode node3 = new ListNode(3);
+		ListNode node4 = new ListNode(4);
+		ListNode node5 = new ListNode(5);
+		node1.next = node2;
+		node2.next = node3;
+		node3.next = node4;
+		node4.next = node5;
+		reverseList3(node1);
 	}
 	
 	public ListNode reverseList(ListNode head) {
@@ -84,6 +93,37 @@ public class Tiku206 {
 		}
     	return cur;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
+     * the third time to practice
+     * recursion's solution
+     * **/
+    public static ListNode reverseList3(ListNode head) {
+    	if(head==null || head.next==null) return head;
+    	ListNode tail = head;
+        while (tail!=null && tail.next!=null) {
+			tail = tail.next;
+		}
+        reverse(head);
+        head.next = null;
+        return tail;
+    }
+    
+    public static ListNode reverse(ListNode head) {
+    	if(head==null || head.next==null) return head;
+        reverse(head.next).next = head;
+        return head;
+    }
+    
+    
     
     
     
