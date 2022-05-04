@@ -25,4 +25,41 @@ public class Tiku200 {
 		dfs(grid, visited, x, y-1);
 		dfs(grid, visited, x, y+1);
 	}
+
+
+
+
+	/**
+	 * the second time to practice
+	 */	
+	int m = 0;
+	int n = 0;
+	char[][] grid;
+	boolean[][] visited;
+	public int numIslands2(char[][] grid) {
+		m = grid.length;
+		n = grid[0].length;
+		this.grid = grid;
+		int cnt = 0;
+		visited = new boolean[m][n];
+		for(int i=0;i<m;i++){
+			for(int j=0;j<n;j++){
+				if(!visited[i][j] && grid[i][j]=='1'){
+					dfs(i,j);
+					cnt++;
+				}
+			}
+		}
+		return cnt;
+    }
+
+	public void dfs(int x,int y){
+		if(x<0 || x>=m || y<0 || y>=n || visited[x][y]) return;
+		if(grid[x][y]!='1') return;
+		visited[x][y] = true;
+		dfs(x+1,y);
+		dfs(x-1,y);
+		dfs(x,y+1);
+		dfs(x,y-1);
+	}
 }

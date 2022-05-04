@@ -1,5 +1,7 @@
 package com.jiqiyi;
 
+import java.util.Collections;
+
 public class Tiku34 {
 	public static void main(String[] args) {
 		int[] nums = {1,2,3};
@@ -32,5 +34,28 @@ public class Tiku34 {
 			index++;
 		}
 		return res;
+    }
+
+
+	/**
+	 * the second time to practice
+	 */
+	public int[] searchRange2(int[] nums, int target) {
+		int n = nums.length;
+		if(n==0) return new int[]{-1,-1};
+		int left=0,right=n-1,mid;
+		while(left<right){
+			mid = left + (right-left)/2;
+			if(nums[mid]<target){
+				left = mid+1;
+			}
+			else{
+				right = mid;
+			}
+		}
+		if(nums[left]!=target) return new int[]{-1,-1};
+		right = left;
+		while(right<n && nums[right]==target) right++;
+		return new int[]{left,right-1};
     }
 }

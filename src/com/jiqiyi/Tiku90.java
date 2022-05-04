@@ -3,6 +3,7 @@ package com.jiqiyi;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -51,5 +52,26 @@ public class Tiku90 {
 			sub.remove(sub.size()-1);
 		}
 		
+	}
+
+
+	/**
+	 * the third time to practice
+	 */
+	private List<List<Integer>> res1 = new ArrayList<>();
+	private LinkedList<Integer> list1 = new LinkedList<>();
+	public List<List<Integer>> subsetsWithDup3(int[] nums) {
+		Arrays.sort(nums);
+		dfs3(nums, 0);
+		return res1;
+    }
+	public void dfs3(int[] nums,int cur){
+		res1.add(new LinkedList<>(list1));
+		for(int i=cur;i<nums.length;i++){
+			if(i>cur && nums[i]==nums[i-1]) continue;
+			list1.add(nums[i]);
+			dfs3(nums, i+1);
+			list1.removeLast();
+		}
 	}
 }

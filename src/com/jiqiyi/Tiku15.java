@@ -69,4 +69,68 @@ public class Tiku15 {
 		return res;
 	}
 
+	/**
+	 * the second time to practice
+	 */
+	public List<List<Integer>> threeSum2(int[] nums) {
+		int n = nums.length;
+		Arrays.sort(nums);
+		List<List<Integer>> res = new ArrayList<>();
+		for(int i=0,j,k,target;i<n;i++){
+			if(nums[i]>0) break;
+			if(i>0 && nums[i]==nums[i-1]) continue;
+			j=i+1;
+			k=n-1;
+			target=-nums[i];
+			while(j<k){
+				if(nums[j]+nums[k]<target){
+					j++;
+				}
+				else if(nums[j]+nums[k]==target){
+					res.add(Arrays.asList(nums[i],nums[j],nums[k]));
+					while(j<k && nums[j]==nums[j+1]) j++;
+					while(j<k && nums[k]==nums[k-1]) k--;
+					j++;
+					k--;
+				}
+				else{
+					k--;
+				}
+			}
+		}
+		return res;
+    }
+
+
+	/**
+	 * the third time to practice
+	 */
+	public List<List<Integer>> threeSum3(int[] nums) {
+		int n = nums.length;
+		Arrays.sort(nums);
+		List<List<Integer>> res = new ArrayList<>();
+		for(int i=0;i<n;){
+			int target = -nums[i];
+			int j=i+1,k=n-1;
+			while(j<k){
+				if(nums[j]+nums[k]<target){
+					j++;
+				}
+				else if(nums[j]+nums[k]==target){
+					res.add(Arrays.asList(nums[i],nums[j],nums[k]));
+					int tmp = nums[k];
+					while(k>j && nums[k]==tmp) k--;
+					tmp = nums[j];
+					while(j<k && nums[j]==tmp) j++;
+				}
+				else{
+					k--;
+				}
+			}
+			int tmp = nums[i];
+			while(i<n && nums[i]==tmp) i++;
+			if(i==n) break;
+		}
+		return res;
+    }
 }

@@ -90,4 +90,8 @@ class Node1 {
 	Node1 left;
 	Node1 right;
 	Node1 next;
+	public Node1(){}
+	public Node1(int val){
+		this.val = val;
+	}
 }

@@ -94,10 +94,46 @@ public class Tiku78 {
 	
 	
 	
+	/**
+	 * the third time to practice
+	 */
+	public List<List<Integer>> subsets3(int[] nums) {
+		List<List<Integer>> res = new ArrayList<>();
+		List<Integer> list = new ArrayList<>();
+		int n = nums.length;
+		for(int i=0;i<(1<<n);i++){
+			for(int j=0;j<n;j++){
+				if(((1<<j)&i)!=0){
+					list.add(nums[j]);
+				}
+			}
+			res.add(new ArrayList<>(list));
+			list.clear();
+		}
+		return res;
+    }
 	
+	/**
+	 * the third time to practice
+	 * use the backtracking
+	 * @param nums
+	 * @return
+	 */
+	public List<List<Integer>> subsets31(int[] nums) {
+		dfs1(nums, 0);
+		return res;
+	}
 	
-	
-	
+	public void dfs1(int[] nums,int cur){
+		res.add(new LinkedList<>(sub));
+		for(int i=cur;i<nums.length;i++){
+			if(!sub.contains(nums[i])){
+				sub.add(nums[i]);
+				dfs1(nums, i+1);
+				sub.removeLast();
+			}
+		}
+	}
 	
 	
 	
