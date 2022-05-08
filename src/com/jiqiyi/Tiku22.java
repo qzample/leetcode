@@ -42,4 +42,40 @@ public class Tiku22 {
 			}
 		}
 	}
+
+
+
+	/**
+	 * the second time to practice
+	 */
+	public List<String> generateParenthesis2(int n) {
+		backtrack(0, 0, n);
+		return res;
+    }
+	public void backtrack(int l,int r,int n){
+		if(l==n && r==n){
+			res.add(sb.toString());
+			return;
+		}
+		if(r==l){
+			sb.append('(');
+			backtrack(l+1, r, n);
+			sb.deleteCharAt(sb.length()-1);
+		}
+		else if(l>r){
+			if(l==n){
+				sb.append(')');
+				backtrack(l, r+1, n);
+				sb.deleteCharAt(sb.length()-1);
+			}
+			else{
+				sb.append('(');
+				backtrack(l+1, r, n);
+				sb.deleteCharAt(sb.length()-1);
+				sb.append(')');
+				backtrack(l, r+1, n);
+				sb.deleteCharAt(sb.length()-1);
+			}
+		}
+	}
 }
