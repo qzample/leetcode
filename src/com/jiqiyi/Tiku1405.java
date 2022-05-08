@@ -11,7 +11,7 @@ public class Tiku1405 {
 
     public static String longestDiverseString(int a, int b, int c) {
     	PriorityQueue<int[]> maxHeap = new PriorityQueue<int[]>((x,y) -> y[1] - x[1]);
-    	// x[0]‘ã•\a x[1]‘ã•\b x[2]‘ã•\c
+    	// x[0]ï¿½ï¿½\a x[1]ï¿½ï¿½\b x[2]ï¿½ï¿½\c
     	if(a>0) maxHeap.add(new int[] {0,a});
     	if(b>0) maxHeap.add(new int[] {1,b});
     	if(c>0) maxHeap.add(new int[] {2,c});

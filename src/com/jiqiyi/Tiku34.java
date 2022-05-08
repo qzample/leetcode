@@ -58,4 +58,29 @@ public class Tiku34 {
 		while(right<n && nums[right]==target) right++;
 		return new int[]{left,right-1};
     }
+
+
+	/**
+	 * the third time to practice
+	 */
+	public int[] searchRange3(int[] nums, int target) {
+		int n = nums.length;
+		if(n==0) return new int[]{-1,-1};
+		int l=0,r=n-1,m;
+		while(l<r){
+			m = l + (r-l)/2;
+			if(nums[m]<target){
+				l = m + 1;
+			}
+			else{
+				r = m;
+			}
+		}
+		int[] res = new int[2];
+		if(nums[l]!=target) return new int[]{-1,-1};
+		res[0] = l;
+		while(l<n && nums[l]==target) l++;
+		res[1] = l - 1;
+		return res;
+    }
 }

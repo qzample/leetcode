@@ -35,4 +35,30 @@ public class Tiku17 {
 			sb.deleteCharAt(sb.length()-1);
 		}
 	}
+
+
+	/**
+	 * the second time to practice
+	 */
+	char[] digitChars;
+	public List<String> letterCombinations2(String digits) {
+		if(digits==null || digits.length()==0) return res;
+		digitChars = digits.toCharArray();
+		backtrack(0);
+		return res;
+    }
+
+	public void backtrack(int cur){
+		if(sb.length()==digitChars.length){
+			res.add(sb.toString());
+			return;
+		}
+		for(int i=cur;i<digitChars.length;i++){
+			for(char ch : keyBoard[digitChars[i]-'0'].toCharArray()){
+				sb.append(ch);
+				backtrack(i+1);
+				sb.deleteCharAt(sb.length()-1);
+			}
+		}
+	}
 }
