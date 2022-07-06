@@ -42,4 +42,26 @@ class Tiku162 {
         }
         return l;
     }
+
+
+
+    /**
+     * the third time to practice
+     * @param nums
+     * @return
+     */
+    public int findPeakElement3(int[] nums) {
+        int n = nums.length;
+        int left=0,right=n-1,center;
+        while(left<right){
+            center = left + (right - left)/2;
+            if(nums[center]<nums[center+1]){
+                left = center + 1;
+            }
+            else{
+                right = center;
+            }
+        }
+        return left;
+    }
 }

@@ -133,4 +133,38 @@ public class Tiku15 {
 		}
 		return res;
     }
+
+	/**
+	 * the fourth time to practice
+	 * @param nums
+	 * @return
+	 */
+	public List<List<Integer>> threeSum4(int[] nums) {
+		List<List<Integer>> res = new ArrayList<>();
+		int n = nums.length;
+		Arrays.sort(nums);
+		for(int i=0;i<n;){
+			int j=i+1,k=n-1;
+			int target = -nums[i];
+			int tmp;
+			while(j<k){
+				if(nums[j]+nums[k]<target){
+					j++;
+				}
+				else if(nums[j]+nums[k]==target){
+					res.add(Arrays.asList(nums[i],nums[j],nums[k]));
+					tmp = nums[k];
+					while(k>j && nums[k]==tmp) k--;
+					tmp = nums[j];
+					while(j<k && nums[j]==tmp) j++;
+				}
+				else{
+					k--;
+				}
+			}
+			tmp = nums[i];
+			while(i<n && nums[i]==tmp) i++;
+		}
+		return res;
+    }
 }

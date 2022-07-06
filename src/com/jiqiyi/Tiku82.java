@@ -47,4 +47,32 @@ class Tiku82 {
         }
         return dummyNode.next;
     }
+
+
+    /**
+     * the third time to practice
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicates3(ListNode head) {
+        if(head==null) return head;
+        ListNode dummyNode = new ListNode();
+        dummyNode.next = head;
+        ListNode pre=dummyNode,cur = head,next;
+        boolean work;
+        while(cur.next!=null){
+            work = false;
+            next = cur.next;
+            while(next!=null && cur.val==next.val){
+                next = next.next;
+                work = true;
+            }
+            if(work) pre.next = next;
+            else{
+                pre = cur;
+            }
+            cur = next;
+        }
+        return dummyNode.next;
+    }
 }

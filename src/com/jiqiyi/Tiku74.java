@@ -31,4 +31,28 @@ public class Tiku74 {
 		}
 		return false;
     }
+
+	/**
+	 * the second time to practice
+	 * @param matrix
+	 * @param target
+	 * @return
+	 */
+	public boolean searchMatrix2(int[][] matrix, int target) {
+		if(matrix==null) return false;
+		int m = matrix.length;
+		int n = matrix[0].length;
+		if(m==0 || n==0) return false;
+		int row=0,col=n-1;
+		while(row<=m-1 && col>=0){
+			if(matrix[row][col]<target){
+				row++;
+			}
+			else if(matrix[row][col]>target){
+				col--;
+			}
+			else return true;
+		}
+		return false;
+    }
 }
