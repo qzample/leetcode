@@ -68,4 +68,19 @@ class Tiku117 {
         }
         return root;
     }
+
+    /**
+     * the second time to practice
+     * @param root
+     * @return
+     */
+    public Node1 connect2(Node1 root) {
+        Queue<Node1> queue = new LinkedList<Node1>();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            Node1 node = queue.poll();
+            node.left = node.right;
+        }
+        return root;
+    }
 }

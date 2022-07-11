@@ -42,4 +42,25 @@ class Tiku153{
         }
         return nums[l];
     }
+
+    /**
+     * the third time to practice
+     * 二段性：前半段都是大于nums[n-1]的，后半段都是小于等于nums[n-1]
+     * @param nums
+     * @return
+     */
+    public int findMin3(int[] nums) {
+        int n = nums.length;
+        int left=0,right=n-1,center;
+        while(left<right){
+            center = left + (right - left)/2;
+            if(nums[center]>nums[n-1]){
+                left = center + 1;
+            }
+            else{
+                right = center;
+            }
+        }
+        return nums[left];
+    }
 }
