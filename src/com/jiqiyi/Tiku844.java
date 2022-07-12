@@ -70,4 +70,52 @@ class Tiku844 {
         String s = "ab#c", t = "ad#c";
         backspaceCompare2(s,t);
     }
+
+
+
+
+
+    /**
+     * the third time to practice
+     * @param s
+     * @param t
+     * @return
+     */
+    public boolean backspaceCompare3(String s, String t) {
+        char[] sChars = s.toCharArray();
+        char[] tChars = t.toCharArray();
+        int ptr1 = sChars.length-1,ptr2=tChars.length-1;
+        int hashCnt1 = 0,hashCnt2=0;
+        while(ptr1>=0 || ptr2>=0){
+            while(ptr1>=0){
+                if(sChars[ptr1]=='#'){
+                    hashCnt1++;
+                    ptr1--;
+                }
+                else if(hashCnt1>0){
+                    hashCnt1--;
+                    ptr1--;
+                }
+                else break;
+            }
+            while(ptr2>=0){
+                if(tChars[ptr2]=='#'){
+                    hashCnt2++;
+                    ptr2--;
+                }
+                else if(hashCnt2>0){
+                    hashCnt2--;
+                    ptr2--;
+                }
+                else break;
+            }
+            if(ptr1>=0 && ptr2>=0){
+                if(sChars[ptr1]!=tChars[ptr2]) return false;
+            }
+            else if(ptr1>=0 || ptr2>=0) return false;
+            ptr1--;
+            ptr2--;
+        }
+        return true;
+    }
 }

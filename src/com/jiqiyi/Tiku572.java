@@ -21,4 +21,26 @@ class Tiku572 {
         if(root.val!=subRoot.val) return false;
         return isSameTree(root.left, subRoot.left) && isSameTree(root.right, subRoot.right);
     }
+
+
+    /**
+     * the second time to practice
+     * @param root
+     * @param subRoot
+     * @return
+     */
+    public boolean isSubtree2(TreeNode root, TreeNode subRoot) {
+        if(root==null) return false;
+        if(isSameTree2(root, subRoot)) return true;
+        return isSubtree2(root.left, subRoot)
+            || isSubtree2(root.right, subRoot);
+    }
+
+    public boolean isSameTree2(TreeNode tree1,TreeNode tree2){
+        if(tree1==null && tree2==null) return true;
+        if(tree1==null || tree2==null) return false;
+        if(tree1.val!=tree2.val) return false;
+        return isSameTree(tree1.left, tree2.left)
+               && isSameTree(tree1.right, tree2.right);
+    }
 }

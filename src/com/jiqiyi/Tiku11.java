@@ -35,4 +35,25 @@ class Tiku11 {
         }
         return max;
     }
+
+    
+    /**
+     * the third time to practice
+     * @param height
+     * @return
+     */
+    public int maxArea3(int[] height) {
+        int n = height.length;
+        int i=0,j=n-1,max=0;
+        while(i<j){
+            max = Math.max((j-i)*Math.min(height[i],height[j]), max);
+            if(height[j]>height[i]){
+                i++;
+            }
+            else{
+                j--;
+            }
+        }
+        return max;
+    }
 }

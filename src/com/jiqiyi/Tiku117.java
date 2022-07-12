@@ -69,17 +69,57 @@ class Tiku117 {
         return root;
     }
 
+
     /**
      * the second time to practice
+     * 空间复杂度：O(n)
      * @param root
      * @return
      */
     public Node1 connect2(Node1 root) {
-        Queue<Node1> queue = new LinkedList<Node1>();
+        if(root==null) return root;
+        Queue<Node1> queue = new LinkedList<>();
         queue.offer(root);
         while(!queue.isEmpty()){
-            Node1 node = queue.poll();
-            node.left = node.right;
+            Node1 pre = null;
+            for(int size = queue.size();size>=0;size--){
+                Node1 cur = queue.poll();
+                if(pre!=null){
+                    pre.next = cur;
+                }
+                pre = cur;
+                if(cur.left!=null) queue.offer(cur.left);
+                if(cur.right!=null) queue.offer(cur.right);
+            }
+        }
+        return root;
+    }
+
+
+    /**
+     * the third time to practice
+     * 空间复杂度：O(1)
+     * @param root
+     * @return
+     */
+    public Node1 connect2_1(Node1 root) {
+        if(root==null) return root;
+        Node1 cur = root;
+        while(cur!=null){
+            Node1 dummyNode = new Node1();
+            Node1 pre = dummyNode;
+            while(cur!=null){
+                if(cur.left!=null){
+                    pre.next = cur.left;
+                    pre = cur.left;
+                }
+                if(cur.right!=null){
+                    pre.next = cur.right;
+                    pre = cur.right;
+                }
+                cur = cur.next;
+            }
+            cur = dummyNode.next;
         }
         return root;
     }
