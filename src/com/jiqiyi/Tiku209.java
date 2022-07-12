@@ -22,4 +22,28 @@ class Tiku209 {
         }
         return ans;
     }
+
+
+    /**
+     * the second time to practice
+     * @param target
+     * @param nums
+     * @return
+     */
+    public int minSubArrayLen2(int target, int[] nums) {
+        int sum = 0;
+        int ans = Integer.MAX_VALUE;
+        int len = nums.length;
+        boolean work = false;
+        for(int i=0,j=0;j<len;j++){
+            sum += nums[j];
+            while(sum>=target){
+                work = true;
+                sum -= nums[i++];
+            }
+            if(work) ans = Math.min(j-i+2, ans);
+            work = false;
+        }
+        return ans == Integer.MAX_VALUE ? 0 : ans;
+    }
 }

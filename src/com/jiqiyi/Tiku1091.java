@@ -32,4 +32,33 @@ class Tiku1091 {
         }
         return -1;
     }
+
+
+    /**
+     * the second time practice
+     * @param grid
+     * @return
+     */
+    public int shortestPathBinaryMatrix2(int[][] grid) {
+        int[][] dict = new int[][]{{1,0},{-1,0},{0,1},{0,-1},{1,-1},{1,1},{-1,1},{-1,-1}};
+        int m = grid.length;
+        int n = grid[0].length;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(grid[i][j]==0){
+
+                }
+            }
+        }
+        return -1;
+    }
+
+    boolean[][] visited = new boolean[][];
+
+    public void dfs(int[][] grid, int x, int y, int cnt){
+        if(x<0 || x>=grid.length || y<0 || y>=grid[0].length || grid[x][y]>0) return;
+        grid[x][y] -= 1;
+        cnt++;
+        if(x==grid.length-1 && y==grid[0].length-1) return;
+    }
 }

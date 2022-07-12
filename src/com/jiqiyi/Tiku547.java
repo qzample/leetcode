@@ -81,4 +81,14 @@ class Tiku547 {
             if(isConnected[cur][i]==1) dfs(visited, isConnected, i);
         }
     }
+
+
+    /**
+     * the third time to practice
+     * @param isConnected
+     * @return
+     */
+    public int findCircleNum3(int[][] isConnected) {
+
+    }
 }

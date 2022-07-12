@@ -35,4 +35,37 @@ class Tiku438 {
         }
         return res;
     }
+
+
+    /**
+     * the second time to practice
+     * @param s
+     * @param p
+     * @return
+     */
+    public List<Integer> findAnagrams2(String s, String p) {
+        int[] sDict = new int[26];
+        int[] pDict = new int[26];
+        char[] sChars = s.toCharArray();
+        char[] pChars = p.toCharArray();
+        int sLen = sChars.length;
+        int pLen = pChars.length;
+        List<Integer> res = new ArrayList<>();
+        if(sLen<pLen) return res;
+        for(int i=0;i<pLen;i++){
+            sDict[sChars[i]-'a']++;
+            pDict[pChars[i]-'a']++;
+        }
+        if(Arrays.equals(sDict, pDict)){
+            res.add(0);
+        }
+        for(int i=pLen;i<sLen;i++){
+            sDict[sChars[i-pLen]-'a']--;
+            sDict[sChars[i]-'a']++;
+            if(Arrays.equals(sDict, pDict)){
+                res.add(i-pLen+1);
+            }
+        }
+        return res;
+    }
 }
