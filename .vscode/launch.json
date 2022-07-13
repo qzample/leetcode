@@ -1,0 +1,1015 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Tiku438",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku438",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku47",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku47",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku117",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku117",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku844",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku844",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku821",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku821",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch MapDemo",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.MapDemo",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Test",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku06",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku06",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku10",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku10",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1001",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1001",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku101",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku101",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku102",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku102",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku103",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku103",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku104",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku104",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku105",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku105",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku108",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku108",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku116",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku116",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku118",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku118",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku119",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku119",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku121",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku121",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku125",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku125",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku13",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku13",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku136",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku136",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1380",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1380",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku14",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku14",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1405",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1405",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku141",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku141",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1447",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1447",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku145",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku145",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku15",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku15",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku153",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku153",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku155",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku155",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku160",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku160",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1601",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1601",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku162",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku162",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku167",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku167",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1688",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1688",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1706",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1706",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1763",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1763",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku189",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku189",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku19",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku19",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku190",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku190",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1968",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1968",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku198",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku198",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1984",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1984",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1994",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1994",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku1996",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1996",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku20",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku20",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2006",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2006",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2016",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2016",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2038",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2038",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku204",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku204",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2044",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2044",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2047",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2047",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2049",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2049",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2055",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2055",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku206",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku206",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku21",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku21",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku2100",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku2100",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku217",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku217",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku234",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku234",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku237",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku237",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku242",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku242",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku268",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku268",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku27",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku27",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku278",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku278",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku28",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku28",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku283",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku283",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku3",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku3",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku326",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku326",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku328",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku328",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku334",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku334",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku34",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku34",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku344",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku344",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku35",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku35",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku36",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku36",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku373",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku373",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku375",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku375",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku38",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku38",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku387",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku387",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku392",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku392",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku393",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku393",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku412",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku412",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku440",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku440",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku461",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku461",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku48",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku48",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku49",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku49",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku5",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku5",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku5203",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku5203",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku5235",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku5235",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku5268",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku5268",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku53",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku53",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku537",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku537",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku539",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku539",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku540",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku540",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku553",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku553",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku557",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku557",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku559",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku559",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku564",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku564",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku567",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku567",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku58",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku58",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku589",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku589",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku590",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku590",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku599",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku599",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku6",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku6",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku6031",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku6031",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku606",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku606",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku6060",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku6060",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku617",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku617",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku653",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku653",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku661",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku661",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku67",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku67",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku682",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku682",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku69",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku69",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku695",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku695",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku7",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku7",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku70",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku70",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku704",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku704",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku720",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku720",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku73",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku73",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku733",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku733",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku74",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku74",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku744",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku744",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku747",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku747",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku762",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku762",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku78",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku78",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku79",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku79",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku798",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku798",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku8",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku8",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku819",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku819",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku82",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku82",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku838",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku838",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku876",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku876",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku88",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku88",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku90",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku90",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku917",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku917",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku94",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku94",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku954",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku954",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku969",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku969",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku977",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku977",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreeOrder",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.TreeOrder",
+            "projectName": "leetcode_505502f9"
+        }
+    ]
+}

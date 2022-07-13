@@ -74,4 +74,26 @@ public class Tiku90 {
 			list1.removeLast();
 		}
 	}
+
+
+	/**
+	 * the fourth time to practice
+	 * @param nums
+	 * @return
+	 */
+	public List<List<Integer>> subsetsWithDup4(int[] nums) {
+		Arrays.sort(nums);
+		dfs4(nums, 0);
+		return res1;
+    }
+
+	public void dfs4(int[] nums,int cur){
+		res1.add(new ArrayList<>(list1));
+		for(int i=cur;i<nums.length;i++){
+			if(i>cur && nums[i]==nums[i-1]) continue;
+			list1.add(nums[i]);
+			dfs4(nums, i+1);
+			list1.removeLast();
+		}
+	}
 }
