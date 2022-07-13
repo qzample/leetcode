@@ -138,4 +138,47 @@ public class Tiku78 {
 	
 	
 
+	/**
+	 * the fourth time to practice
+	 * binary's solution
+	 * @param nums
+	 * @return
+	 */
+	public List<List<Integer>> subsets4(int[] nums) {
+		List<Integer> list = new ArrayList<>();
+		List<List<Integer>> res = new ArrayList<>();
+		int n = nums.length;
+		for(int i=0;i<(1<<n);i++){
+			for(int mask=0;mask<n;mask++){
+				if(((1<<mask)&i)!=0){
+					list.add(nums[mask]);
+				}
+			}
+			res.add(new ArrayList<>(list));
+			list.clear();
+		}
+		return res;
+    }
+
+	/**
+	 * backtracking's solution
+	 * @param nums
+	 * @return
+	 */
+	public List<List<Integer>> subsets4_1(int[] nums) {
+		dfs4_1(nums, 0);
+		return res;
+	}
+
+	public void dfs4_1(int[] nums,int cur){
+		res.add(new ArrayList<>(sub));
+		for(int i=cur;i<nums.length;i++){
+			if(!sub.contains(nums[i])){
+				sub.add(nums[i]);
+				dfs4_1(nums,i+1);
+				sub.removeLast();
+			}
+		}
+	}
+
 }
