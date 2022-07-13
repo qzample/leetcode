@@ -50,16 +50,16 @@ class Tiku1091 {
         int path = 0;
         while(!queue.isEmpty()){
             path++;
-            for(int size = queue.size()-1;size>=0;size--){
-                int[] pos = queue.poll();
-                int x = pos[0];
-                int y = pos[1];
+            for(int size=queue.size()-1;size>=0;size--){
+                int[] loc = queue.poll();
+                int x = loc[0];
+                int y = loc[1];
                 if(x==m-1 && y==n-1) return path;
                 for(int i=dict.length-1;i>=0;i--){
-                    int dx = x+dict[i][0];
-                    int dy = y+dict[i][1];
+                    int dx = x + dict[i][0];
+                    int dy = y + dict[i][1];
                     if(dx<0 || dx>=m || dy<0 || dy>=n) continue;
-                    if(isVisited[dx][dy] || grid[x][y]==1) continue;
+                    if(isVisited[dx][dy] || grid[dx][dy]==1) continue;
                     isVisited[dx][dy] = true;
                     queue.offer(new int[]{dx,dy});
                 }
