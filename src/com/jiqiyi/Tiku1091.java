@@ -43,17 +43,30 @@ class Tiku1091 {
         int[][] dict = new int[][]{{1,0},{-1,0},{0,1},{0,-1},{1,-1},{1,1},{-1,1},{-1,-1}};
         int m = grid.length;
         int n = grid[0].length;
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(grid[i][j]==0){
-
+        if(grid[0][0]!=0 || grid[m-1][n-1]!=0) return -1;
+        boolean[][] isVisited = new boolean[m][n];
+        Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{0,0});
+        int path = 0;
+        while(!queue.isEmpty()){
+            path++;
+            for(int size=queue.size()-1;size>=0;size--){
+                int[] loc = queue.poll();
+                int x = loc[0];
+                int y = loc[1];
+                if(x==m-1 && y==n-1) return path;
+                for(int i=dict.length-1;i>=0;i--){
+                    int dx = x + dict[i][0];
+                    int dy = y + dict[i][1];
+                    if(dx<0 || dx>=m || dy<0 || dy>=n) continue;
+                    if(isVisited[dx][dy] || grid[dx][dy]==1) continue;
+                    isVisited[dx][dy] = true;
+                    queue.offer(new int[]{dx,dy});
                 }
             }
         }
         return -1;
     }
-
-    boolean[][] visited = new boolean[][];
 
     public void dfs(int[][] grid, int x, int y, int cnt){
         if(x<0 || x>=grid.length || y<0 || y>=grid[0].length || grid[x][y]>0) return;
