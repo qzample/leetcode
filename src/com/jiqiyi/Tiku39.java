@@ -32,4 +32,33 @@ class Tiku39 {
             list.removeLast();
         }
     }
+
+    /**
+     * the second time to practice
+     * @param candidates
+     * @param target
+     * @return
+     */
+    public List<List<Integer>> combinationSum3(int[] candidates, int target) {
+        this.nums = candidates;
+        Arrays.sort(nums);
+        dfs(0, target, 0);
+        return res;
+    }
+
+    public void dfs(int sum, int target, int cur){
+        if(sum>target) return;
+        if(sum==target){
+            res.add(new ArrayList<>(list));
+            return;
+        }
+        for(int i=cur;i<nums.length;i++){
+            if(nums[i]>target) break;
+            list.add(nums[i]);
+            sum += nums[i];
+            dfs(sum, target, i);
+            sum -= nums[i];
+            list.removeLast();
+        }
+    }
 }
