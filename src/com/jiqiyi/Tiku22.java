@@ -78,4 +78,14 @@ public class Tiku22 {
 			}
 		}
 	}
+
+	
+	/**
+	 * the third time to practice
+	 * @param n
+	 * @return
+	 */
+	public List<String> generateParenthesis3(int n) {
+		
+    }
 }

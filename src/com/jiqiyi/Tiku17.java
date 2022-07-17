@@ -61,4 +61,29 @@ public class Tiku17 {
 			}
 		}
 	}
+
+
+	/**
+	 * the third time to practice
+	 * @param digits
+	 * @return
+	 */
+	public List<String> letterCombinations3(String digits) {
+		if(digits==null || digits.length()==0) return res;
+		this.digitChars = digits.toCharArray();
+		return res;
+    }
+
+	public void dfs(int cur){
+		if(cur>digitChars.length) return;
+		if(sb.length()==digitChars.length){
+			res.add(sb.toString());
+			return;
+		}
+		for(char c:keyBoard[digitChars[cur]-'0'].toCharArray()){
+			sb.append(c);
+			dfs(cur+1);
+			sb.deleteCharAt(sb.length()-1);
+		}
+	}
 }
