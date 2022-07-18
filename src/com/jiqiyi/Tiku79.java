@@ -68,4 +68,36 @@ public class Tiku79 {
 		_board[i][j] = tmp;
 		return res;
 	}
+
+
+	/**
+	 * the third time to practice
+	 * @param board
+	 * @param word
+	 * @return
+	 */
+	public boolean exist3(char[][] board, String word) {
+		int m = board.length;
+		int n = board[0].length;
+		boolean[][] visited = new boolean[m][n];
+		for(int i=0;i<m;i++){
+			for(int j=0;j<n;j++){
+				if(board[i][j]==word.charAt(0) && bfs3(board, word, i, j, 0)) return true;
+			}
+		}
+		return false;
+    }
+
+	public boolean bfs3(char[][] board, String word, int x, int y, int cur){
+		if(x<0 || x>=board.length || y<0 || y>=board[0].length || word.charAt(cur)!=board[x][y]) return false;
+		if(cur==word.length()-1) return true;
+		char tmp = board[x][y];
+		board[x][y] = '.';
+		boolean res = bfs3(board, word, x+1, y, cur+1)
+		    || bfs3(board, word, x-1, y, cur+1)
+			|| bfs3(board, word, x, y+1, cur+1)
+			|| bfs3(board, word, x, y-1, cur+1);
+		board[x][y] = tmp;
+		return res;
+	}
 }
