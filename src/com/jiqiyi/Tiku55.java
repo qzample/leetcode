@@ -14,4 +14,20 @@ class Tiku55 {
         }
         return pre>=n-1;
     }
+
+
+    /**
+     * the second time to practice
+     * @param nums
+     * @return
+     */
+    public boolean canJump2(int[] nums) {
+        int n = nums.length;
+        int pre = 0;
+        for(int i=0;i<n;i++){
+            if(pre<i) break;
+            pre = Math.max(pre, i+nums[i]);
+        }
+        return pre>=n-1;
+    }
 }
