@@ -86,6 +86,28 @@ public class Tiku22 {
 	 * @return
 	 */
 	public List<String> generateParenthesis3(int n) {
-		
+		dfs3(0,0,n);
+		return res;
     }
+
+	public void dfs3(int left,int right,int n){
+		if(left>n || right>n || left<right) return;
+		if(left==n && right==n){
+			res.add(sb.toString());
+			return;
+		}
+		if(left>right){
+			sb.append("(");
+			dfs3(left+1, right, n);
+			sb.deleteCharAt(sb.length()-1);
+			sb.append(")");
+			dfs3(left, right+1, n);
+			sb.deleteCharAt(sb.length()-1);
+		}
+		else{
+			sb.append("(");
+			dfs3(left+1, right, n);
+			sb.deleteCharAt(sb.length()-1);
+		}
+	}
 }
