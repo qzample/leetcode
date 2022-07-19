@@ -70,35 +70,34 @@ public class Tiku79 {
 	}
 
 
-	/**
+/**
 	 * the third time to practice
 	 * @param board
 	 * @param word
 	 * @return
 	 */
 	public boolean exist3(char[][] board, String word) {
-		this._board = board;
-		this._word = word;
-		this.m = board.length;
-		this.n = board[0].length;
-		this._visited = new boolean[m][n];
+		int m = board.length;
+		int n = board[0].length;
+		boolean[][] visited = new boolean[m][n];
 		for(int i=0;i<m;i++){
 			for(int j=0;j<n;j++){
-				if(board[i][j]==word.charAt(0)){
-					if(dfs3(0,0,0)) return true;
-					_visited  = new boolean[m][n];
-				}
+				if(board[i][j]==word.charAt(0) && bfs3(board, word, i, j, 0)) return true;
 			}
 		}
 		return false;
     }
 
-	public boolean dfs3(int cur,int x,int y){
-		if(x<0 || x>=m || y<0 || y>=n || _visited[x][y]) return false;
-		if(cur==_word.length()) return true;
-		if(_board[x][y]!=_word.charAt(cur)) return false;
-		_visited[x][y] = true;
-		return dfs3(cur+1, x+1, y) || dfs3(cur+1, x, y+1)
-		       || dfs3(cur+1, x-1, y) || dfs3(cur+1, x, y-1);
+	public boolean bfs3(char[][] board, String word, int x, int y, int cur){
+		if(x<0 || x>=board.length || y<0 || y>=board[0].length || word.charAt(cur)!=board[x][y]) return false;
+		if(cur==word.length()-1) return true;
+		char tmp = board[x][y];
+		board[x][y] = '.';
+		boolean res = bfs3(board, word, x+1, y, cur+1)
+		    || bfs3(board, word, x-1, y, cur+1)
+			|| bfs3(board, word, x, y+1, cur+1)
+			|| bfs3(board, word, x, y-1, cur+1);
+		board[x][y] = tmp;
+		return res;
 	}
 }
