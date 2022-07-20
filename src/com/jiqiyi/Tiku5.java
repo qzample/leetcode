@@ -70,4 +70,68 @@ public class Tiku5 {
 		return s.substring(begin,begin+maxLen);
 	}
 	
+	/**
+	 * the second time to practice
+	 * @param s
+	 * @return
+	 */
+	public String longestPalindrome2(String s) {
+		char[] sChars = s.toCharArray();
+		int n = sChars.length;
+		int left=0,right=0;
+		int maxLen=0;
+		for(int i=0;i<n;i++){
+			for(int j=i+1;j<n;j++){
+				if(j-i+1>maxLen && isPalindrome(sChars, i, j)){
+					maxLen = j - i + 1;
+					left = i;
+					right = j;
+				}
+			}
+		}
+		return s.substring(left, right+1);
+    }
+
+	public boolean isPalindrome(char[] sChars,int left, int right){
+		while(left<right){
+			if(sChars[left]!=sChars[right]){
+				return false;
+			}
+			left++;
+			right--;
+		}
+		return true;
+	}
+
+	/**
+	 * the second time to practice 
+	 * dynamic plan's solution
+	 * @param s
+	 * @return
+	 */
+	public String longestPalindrome2_1(String s) {
+		char[] sChars = s.toCharArray();
+		int n = sChars.length;
+		if(n<2) return s;
+		int left=0,right=1;
+		int maxLen=1;
+		boolean[][] dp = new boolean[n][n];
+		for(int i=0;i<n;i++){
+			for(int j=0;j<n;j++){
+				if(i==j) dp[i][j]=true;
+			}
+		}
+		for(int i=0;i<n;i++){
+			for(int j=i+1;j<n;j++){
+				if(j==i) dp[i][j]=true;
+				else if(dp[i+1][j-1] && sChars[i]==sChars[j]) dp[i][j]=true;
+				if(dp[i][j] && j-i+1>maxLen){
+					left = i;
+					right = j;
+					maxLen = j-i+1;
+				}
+			}
+		}
+		return s.substring(left, right+1);
+	}
 }
