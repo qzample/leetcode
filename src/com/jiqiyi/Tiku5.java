@@ -4,7 +4,7 @@ public class Tiku5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(longestPalindrome("baabaad"));
+		System.out.println(longestPalindrome2_2("aba"));
 	} 
 	
 	public static String longestPalindrome1(String s) {
@@ -113,25 +113,57 @@ public class Tiku5 {
 		char[] sChars = s.toCharArray();
 		int n = sChars.length;
 		if(n<2) return s;
-		int left=0,right=1;
+		int left=0;
 		int maxLen=1;
 		boolean[][] dp = new boolean[n][n];
-		for(int i=0;i<n;i++){
-			for(int j=0;j<n;j++){
-				if(i==j) dp[i][j]=true;
-			}
-		}
-		for(int i=0;i<n;i++){
-			for(int j=i+1;j<n;j++){
-				if(j==i) dp[i][j]=true;
-				else if(dp[i+1][j-1] && sChars[i]==sChars[j]) dp[i][j]=true;
+		for(int j=0;j<n;j++){
+			for(int i=0;i<j;i++){
+				if(sChars[i]!=sChars[j]) dp[i][j]=false;
+				else{
+					if(j-i<3) dp[i][j] = true;
+					else{
+						dp[i][j] = dp[i+1][j-1];
+					}
+				}
 				if(dp[i][j] && j-i+1>maxLen){
 					left = i;
-					right = j;
 					maxLen = j-i+1;
 				}
 			}
 		}
-		return s.substring(left, right+1);
+		return s.substring(left, left + maxLen);
+	}
+
+
+	/**
+	 * expand around center
+	 * @param s
+	 * @return
+	 */
+	public static String longestPalindrome2_2(String s) {
+		if(s==null||s.length()==0) return s;
+		int maxLen = 0;
+		int begin = 0;
+		for(int i=0;i<s.length();i++){
+			int len1 = expandAroundCenter(i, i, s);
+			int len2 = expandAroundCenter(i, i+1, s);
+			int len = Math.max(len1, len2);
+			if(len>maxLen){
+				begin = i - (len-1)/2;
+				maxLen = len;
+			}
+		}
+		return s.substring(begin, begin + maxLen);
+	}
+
+	public static int expandAroundCenter(int left, int right, String s){
+		while(left>=0 && right<s.length()){
+			if(s.charAt(left)==s.charAt(right)){
+				left--;
+				right++;
+			}
+			else break;
+		}
+		return right - left - 1;
 	}
 }

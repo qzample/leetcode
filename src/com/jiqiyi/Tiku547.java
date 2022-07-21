@@ -88,7 +88,7 @@ class Tiku547 {
      * @param isConnected
      * @return
      */
-    public int findCircleNum3(int[][] isConnected) {
+    // public int findCircleNum3(int[][] isConnected) {
 
-    }
+    // }
 }

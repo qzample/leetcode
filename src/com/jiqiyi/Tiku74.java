@@ -5,7 +5,7 @@ public class Tiku74 {
 		int[][] matrix = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
 		System.out.println(searchMatrix2(matrix, 3));
 	}
-	public static boolean searchMatrix(int[][] matrix, int target) {
+	public static boolean searchMatrix1(int[][] matrix, int target) {
 		int m = matrix.length;
 		int n = matrix[0].length;
 		int row=0;
@@ -87,5 +87,6 @@ public class Tiku74 {
 				right = mid;
 			}
 		}
+		return false;
 	}
 }
