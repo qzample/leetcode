@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Tiku1143",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku1143",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku673",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku673",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiku300",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku300",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
             "name": "Launch Tiku91",
             "request": "launch",
             "mainClass": "com.jiqiyi.Tiku91",
