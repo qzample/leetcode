@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Tiku658",
+            "request": "launch",
+            "mainClass": "com.jiqiyi.Tiku658",
+            "projectName": "leetcode_505502f9"
+        },
+        {
+            "type": "java",
             "name": "Launch Tiku153",
             "request": "launch",
             "mainClass": "com.jiqiyi.Tiku153",
