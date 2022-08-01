@@ -2,8 +2,8 @@ package com.jiqiyi;
 
 class Tiku162 {
     public static void main(String[] args) {
-        int[] nums = {1,2,1,3,5,6,4};
-        findPeakElement(nums);
+        int[] nums = new int[]{6,5,4,3,2,3,2};
+        findPeakElement4(nums);
     }
 
     /**
@@ -63,5 +63,22 @@ class Tiku162 {
             }
         }
         return left;
+    }
+
+
+    /**
+     * the fourth time to practice
+     * @param nums
+     * @return
+     */
+    public static int findPeakElement4(int[] nums) {
+        int n = nums.length;
+        int left=0,right=n-1,mid;
+        while(left<right){
+            mid = left + (right-left)/2;
+            if(nums[mid]<nums[mid+1]) left = mid + 1;
+            else right = mid;
+        }
+        return right;
     }
 }

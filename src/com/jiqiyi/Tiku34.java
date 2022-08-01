@@ -83,4 +83,27 @@ public class Tiku34 {
 		res[1] = l - 1;
 		return res;
     }
+
+	/**
+	 * the fourth time to practice
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
+	public int[] searchRange4(int[] nums, int target) {
+		if(nums==null || nums.length==0) return new int[]{-1,-1};
+		int n = nums.length;
+		int left=0,right=n-1,mid;
+		while(left<right){
+			mid = left + (right-left)/2;
+			if(nums[mid]<target) left = mid + 1;
+			else right = mid;
+		}
+		if(nums[left]!=target) return new int[]{-1,-1};
+		int[] res = new int[2];
+		res[0] = left;
+		while(left<n && nums[left]==target) left++;
+		res[1] = left-1;
+		return res;
+    }
 }

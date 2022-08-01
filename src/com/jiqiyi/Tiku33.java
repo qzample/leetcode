@@ -147,4 +147,48 @@ public class Tiku33 {
 		return nums[left]==target?left:-1;
 	}
     
+
+	/**
+	 * the fifth time to practice
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
+	public static int search5(int[] nums, int target) {
+		if(nums==null || nums.length==0) return -1;
+		int n = nums.length;
+		if(n==1) return nums[0]==target?0:-1;
+		int left=0,right=n-1,mid;
+		// firstly, we try to find the rotation point
+		while(left<=right){
+			mid = left + (right-left)/2;
+			if(nums[0]<=nums[mid]) left = mid + 1;
+			else right = mid - 1;
+		}
+		// right is the rotation point 
+		if(nums[0]>target){
+			// try to find target in [right,n-1]
+			return binarySearch(right+1, n-1, nums, target);
+		}
+		else {
+			// try to find target in [left,nums[n-1]]
+			return binarySearch(0, right, nums, target);
+		}
+	}
+	
+	public static int binarySearch(int left,int right,int[] nums,int target){
+		if(left>=nums.length || right>=nums.length) return -1;
+		while(left<right){
+			int mid = left + (right-left)/2;
+			if(nums[mid]<target) left = mid + 1;
+			else right = mid;
+		}
+		return nums[left]==target ? left : -1;
+	}
+
+	public static void main(String[] args) {
+		int[] nums = new int[]{1,3};
+		int target = 1;
+		System.out.println(search5(nums,target));
+	}
 }
